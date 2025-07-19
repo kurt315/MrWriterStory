@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mga Kwento ni Boss</title>
+  <style>
+    :root {
+      --primary-color: #6a1b9a;
+      --accent-color: #ff4081;
+      --bg-gradient: linear-gradient(to bottom right, #fce4ec, #e1bee7);
+      --card-bg: #ffffff;
+      --text-color: #333;
+      --spine-color: #9575cd;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      color: white;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #ffd54f;
+    }
+
+    header p {
+      font-size: 1em;
+      margin-top: 5px;
+      color: #f8f8f8;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+      gap: 16px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .book {
+      position: relative;
+      width: 140px;
+      height: 220px;
+      background: var(--card-bg);
+      border-radius: 6px;
+      box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      perspective: 1000px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .book:hover {
+      transform: rotateY(-3deg) scale(1.03);
+      box-shadow: 10px 14px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .book::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 100%;
+      background: var(--spine-color);
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    .book-title {
+      font-size: 1.05em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 18px;
+      color: var(--primary-color);
+    }
+
+    .book-desc {
+      font-size: 0.85em;
+      color: #555;
+      margin-left: 18px;
+    }
+
+    /* Optional: Adjust spacing on super small screens */
+    @media (max-width: 360px) {
+      .book {
+        width: 130px;
+        height: 200px;
+        padding: 12px;
+      }
+    }
+  .chapter-label {
+    text-align: center;
+    font-size: 0.85em;
+    color: #aaa;
+    margin-top: 40px;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mr. Writer</h1>
+    <p>All story base in fiction.</p>
+<h6>I will be update for new Story</h6>
+  </header>
+
+  <div class="container">
+    <a href="kwento1.html" class="book">
+      <div class="book-title">I'm in Love with My Classmates ❤️</div>
+      <div class="book-desc">Story about Dave and Kathryn.</div>
+    </a>
+
+    <a href="kwento2.html" class="book">
+      <div class="book-title">Love Starts on a Moto</div>
+      <div class="book-desc">Romansa na nag-ugat sa terminal...</div>
+    </a>
+
+    <a href="kwento3.html" class="book">
+      <div class="book-title">Lihim sa Silid 402</div>
+      <div class="book-desc">May tinatago ang lumang silid sa paaralan...</div>
+    </a>
+
+    <a href="kwento4.html" class="book">
+      <div class="book-title">Ang Lihim ni Luna</div>
+      <div class="book-desc">Isang kwento ng kababalaghan at pag-ibig.</div>
+    </a>
+  </div>
+<div class="chapter-label">
+      WRITTEN by MR. WRITER © 2023;
+</body>
+</html> 
